@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './Components/Projects';
+import AddProject from './Components/AddProject';
+
 
 class App extends Component {
   constructor(){
@@ -18,7 +20,7 @@ class App extends Component {
           {title: 'Personal Website',
           category: 'Web Design'},
           {title: 'Big Data',
-          category: 'Data analytics'}
+          category: 'Data Analytics'}
         ]
       })
     }
@@ -26,7 +28,7 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-        <p>this is the app div</p>
+        <AddProject />
         <Projects projects={this.state.projects}/>
         </div>
       );
